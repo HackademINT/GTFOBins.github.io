@@ -6,7 +6,14 @@ functions:
         echo 'exec sh' > $TF
         chmod +x $TF
         pico -s $TF /etc/hosts
-        ^T
+        ^T 
+    - description: If ``Unknown error`` is provided on `^T`, you can try:
+      code: |
+        TF=$(mktemp)
+        echo 'exec sh' > $TF
+        chmod +x $TF
+        pico -s $TF /etc/hosts
+        ^R ^X /bin/sh
   file-write:
     - code: |
         pico file_to_write
