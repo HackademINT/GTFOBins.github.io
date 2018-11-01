@@ -7,7 +7,7 @@ functions:
         chmod +x $TF
         pico -s $TF /etc/hosts
         ^T 
-    - description: If ``Unknown error`` is provided on `^T`, you can try:
+    - description: If ``Unknown error`` is provided on `^T`, you can try the following code.
       code: |
         TF=$(mktemp)
         echo 'exec sh' > $TF
