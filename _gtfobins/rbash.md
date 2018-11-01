@@ -13,7 +13,7 @@ functions:
         }
         gcc -shared script.c -o script
         declare -x LD_PRELOAD=/path/to/script
-    - description: Note: This was fixed in bash 4.4
+    - description: Note, this was fixed in bash 4.4
       code: |
         BASH_CMDS[gtfo]=/bin/bash; gtfo
 ---
